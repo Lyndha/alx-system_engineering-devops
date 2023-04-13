@@ -1,2 +1,2 @@
 #!/bin/bash
-:!ls -a1 | sort -n | sed -e '1s/^/.\n..\n/' -e 's/$/\//g' | tr '\n' ', ' && echo
+ls -m /0x00-shell_basics
