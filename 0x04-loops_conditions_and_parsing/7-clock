@@ -2,12 +2,12 @@
 #Write a Bash script that displays the time for 12 hours and 59 minutes:
 
 hr=0
-min=1
 
-while [[ "$hr" -le 12 -a "$hr"  1 ]]
+while [[ "$hr" -le 12 ]]
 do
 	echo "Hour: $hr"
 #	((hr++))
+	min=1
 	while [[ "$min" -le 59 ]]
 	do
 		echo "$min"
@@ -15,5 +15,4 @@ do
 #		((hr++))
 	done
 	((hr++))
-
 done
