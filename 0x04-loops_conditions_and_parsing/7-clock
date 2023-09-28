@@ -14,5 +14,5 @@ do
 		((min++))
 #		((hr++))
 	done
-	((hr++))
+	(( hr++ ))
 done
