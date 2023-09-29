@@ -8,4 +8,4 @@
 #The third line of your script must be # shellcheck disable=SC2009 (for more info about ignoring shellcheck error here)
 
 
-ps | grep bash
+ps aux | grep "bash"
