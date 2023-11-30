@@ -1,7 +1,20 @@
 #!/usr/bin/env bash
-# Install Nginx and the init file have only a message
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt install nginx -y
-sudo service nginx start
-echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
+# This file installs nginx web server on an ubuntu server
+
+sudo apt update
+sudo apt install -y nginx
+
+sudo bash -c 'echo "server {
+    listen 80;
+    server_name _;
+
+    location / {
+        return 200 \"Hello World!\";
+    }
+}" > /etc/nginx/sites-available/default'
+
+# Restart Nginx
+sudo /etc/init.d/nginx restart
+
+# Display a message indicating successful configuration
+echo "Nginx has been configured. You can test it by running 'curl http://localhost/'
