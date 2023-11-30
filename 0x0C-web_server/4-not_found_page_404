@@ -2,7 +2,7 @@
 # sets up a new 404 error page
 sudo apt-get update
 sudo apt-get install -y nginx 
-echo "Ceci n'est pas une page" > index.html
+echo "Hello World!" > index.html
 sudo mv index.html /var/www/html
 
 
