@@ -5,4 +5,4 @@ apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 rm /etc/nginx/sites-enabled/default
 ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx start
+service nginx restart
