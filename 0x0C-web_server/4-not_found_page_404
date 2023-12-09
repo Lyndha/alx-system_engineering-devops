@@ -40,4 +40,4 @@ if [ ! -e "/etc/nginx/sites-enabled/default" ]; then
         sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 fi
 
-sudo service nginx restart#!/usr/bin/env bash
+sudo service nginx restart
