@@ -1,0 +1,10 @@
+#to block all incoming traffic
+sudo ufw default deny incoming
+
+#to allow ports
+sudo ufw allow ssh
+sudo ufw allow https
+sudo ufw allow http
+
+#to see the list of all the rules i have added
+sudo ufw status
